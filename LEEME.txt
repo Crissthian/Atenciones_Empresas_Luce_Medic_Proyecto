@@ -1,0 +1,17 @@
+PANEL DE ATENCIONES POR EMPRESA - LUCE MEDIC
+
+Contenido:
+- index.html: página principal
+- styles.css: estilos adaptables a celular y escritorio
+- app.js: filtros, gráficos, lectura local de nuevos Excel y descargas CSV
+- data.json: todos los conteos precargados del reporte del 29/09/2026
+
+Instalación en tu hosting:
+1. Extrae el ZIP.
+2. Sube los cuatro archivos al directorio público de tu dominio o subdominio (por ejemplo public_html/estadisticas/).
+3. Abre la dirección correspondiente. Debe servirse por HTTP o HTTPS; abrir index.html como archivo local puede bloquear la lectura de data.json.
+4. Para reemplazar los datos temporalmente durante una sesión, usa "Cargar Excel actualizado". Ese archivo se procesa en el navegador y no reemplaza data.json en el servidor.
+
+Los datos iniciales incluyen 1,356 atenciones y 1,610 diagnósticos de enero a septiembre de 2026. Se almacenan conteos agregados por mes, empresa y diagnóstico. El proyecto no incluye nombres de pacientes, tratamientos ni el Excel original.
+
+Si publicas el directorio sin protección, cualquier visitante con la URL podrá ver estos resultados agregados. Configura el acceso de tu hosting según quién deba consultarlos.
